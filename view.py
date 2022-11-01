@@ -7,6 +7,6 @@ class View:
             result = "List of rectangles:\n"
             for rect in rectangles:
                 if isinstance(rect, Rectangle):
-                    result += rect.get_info() + "\n"
+                    result += str(rect) + "\n"
 
             return result

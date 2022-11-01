@@ -12,8 +12,14 @@ class Rectangle:
     def get_info(self):
         return f"Rectangle: a = {self.a}, b = {self.b}"
 
+    def __repr__(self):
+        return f"Technical info about instance."
+    def __str__(self):
+        return f"Rectangle: a = {self.a}, b = {self.b}"
     def __del__(self):
         pass
+
+
 
 #
 # rect1 = Rectangle(10, 15)
